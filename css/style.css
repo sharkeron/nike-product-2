@@ -2,7 +2,7 @@
     font-family: "MuseoSans";
 
     src: url(../fonts/MuseoSans/museosanscyrl-webfont.eot) format("embedded-opentype");
-    src: url(../fonts/MuseoSans/museosanscyrl-webfont.otf) format("opentype"), url(../fonts/MuseoSans/museosanscyrl-webfont.ttf) format("truetype"), url(../fonts/MuseoSans/museosanscyrl-webfont.woff) format("woff"), url(../fonts/MuseoSans/museosanscyrl-webfont.woff2) format("woff2"), url(../fonts/MuseoSans/museosanscyrl-webfont.svg) format("svg");
+    src: url(../fonts/MuseoSans/museosanscyrl-webfont.ttf) format("truetype"), url(../fonts/MuseoSans/museosanscyrl-webfont.woff) format("woff"), url(../fonts/MuseoSans/museosanscyrl-webfont.woff2) format("woff2"), url(../fonts/MuseoSans/museosanscyrl-webfont.svg) format("svg");
 }
 
 * {
@@ -41,6 +41,7 @@ body {
     background-color: #152335;
 
     flex-wrap: wrap;
+    box-shadow: 0 0 75px #000000;
 }
 
 header {
@@ -59,29 +60,36 @@ header {
     padding-left: 35px;
 }
 
-.image__color {
+.image__colors {
     margin-top: 65px;
     margin-left: 143px;
-
-    font-size: 14px;
 }
 
-.darkblue {
-    color: #293550;
-    border: 3px solid #8F949B;
+.image__color{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
 }
 
-.white {
-    color: #fff;
+.image__color--darkblue {
+    background: #293550;
+    border: 2px solid #8E939B;
 }
 
-.red {
-    color: #F34B41;
+.image__color--white {
+    background: #fff;
+    border: 2px solid #152335;
 }
 
-.blue {
-    color: #24E7EE;
+.image__color--red {
+    background: #F34B41;
+    border: 2px solid #152335;
+}
+
+.image__color--blue {
+    background: #24E7EE;
+    border: 2px solid #152335;
 }
 
 .info {
@@ -90,7 +98,7 @@ header {
     height: 80%;
 }
 
-.title h1 {
+.info h1 {
     margin-right: 80px;
 
     font-size: 24px;
@@ -105,13 +113,13 @@ header {
     font-size: 14px;
 }
 
-.rate {
+.info__rate {
     margin-top: 10px;
 
     color: #F9C819;
 }
 
-.rate i {
+.info__rate i {
     font-size: 10px;
 }
 
@@ -119,15 +127,15 @@ header {
     color: #ADB0B5;
 }
 
-.select {
+.info__form {
     width: 140px;
     margin-top: 30px;
 }
 
-.select select {
+.info__select select {
     width: 65px;
     height: 30px;
-    padding: 5px;
+    padding-left: 5px;
 
     color: #6F757E;
     border: 1px solid #6F757E;
@@ -144,12 +152,11 @@ header {
     -webkit-appearance: none;
 }
 
-.cart {
+.info__btn{
     box-sizing: border-box;
     width: 180px;
     height: 40px;
     margin-top: 25px;
-    padding-top: 10px;
 
     text-align: center;
 

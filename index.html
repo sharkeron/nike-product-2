@@ -14,7 +14,7 @@
     <div class="background">
         <div class="content">
             <header>
-                <div class="logo">
+                <div>
                     <img src="img/logo.png" alt="">
                 </div>
             </header>
@@ -22,28 +22,20 @@
                 <div class="image__cross">
                     <img src="img/cross.png" alt="">
                 </div>
-                <div class="image__color">
-                    <span class="darkblue">
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                    </span>
-                    <span class="white">
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                    </span>
-                    <span class="red">
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                    </span>
-                    <span class="blue">
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                    </span>
+                <div class="image__colors">
+                    <div class="image__color image__color--darkblue"></div>
+                    <div class="image__color image__color--white"></div>
+                    <div class="image__color image__color--red"></div>
+                    <div class="image__color image__color--blue"></div>
                 </div>
             </div>
             <div class="info">
-                <div class="title">
+                <div>
                     <h1>Nike SB Stefan
                     <br>Janoski Max</h1>
                 </div>
                 <p>Unisex Skateboarding Shoe</p>
-                <div class="rate">
+                <div class="info__rate">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -52,25 +44,29 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                     </span>
                 </div>
-                <div class="select">
-                    <select size="1">
-                    <option value="Size">Size</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    </select>
-                    <select size="1">
-                    <option value="Qty">Qty</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="cart">Add to cart</div>
+                <form class="info__form">
+                    <div class="info__select">
+                        <select name="size" size="1">
+                            <option value="Size">Size</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <select name="qty" size="1">
+                            <option value="Qty">Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="info__cart">
+                        <button type="submit" class="info__btn">Add to cart</button>
+                    </div>
+                </form>
             </div>
 
         </div>
